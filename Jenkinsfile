@@ -6,7 +6,7 @@ pipeline {
                bat 'npm install'
             }
         }
-        stage('Ru ingration tests') {
+        stage('Run ingration tests') {
             steps {
                bat 'npm run test'
             }
