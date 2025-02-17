@@ -3,6 +3,6 @@ services:
   app:
     image: beroe78/students:latest
     ports:
-      - "3331:8081" # Map port 3030 on the host to port 3030 in the container
+      - "3331:8080" # Map port 3030 on the host to port 3030 in the container
     environment:
       - NODE_ENV=production
