@@ -16,6 +16,11 @@ pipeline {
                bat 'npm run test'
             }
         }
+         stage('Dobre si Nasko') {
+            steps {
+               echo 'Dobre si Nasko'
+            }
+        }
     }
 
 }
