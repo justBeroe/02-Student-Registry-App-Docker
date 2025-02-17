@@ -16,6 +16,11 @@ pipeline {
                bat 'npm run test'
             }
         }
+           stage('Approval for Beroe Production Deployment') {
+            steps {
+               input message: 'Proceed with production deployment, Nasko?', ok: 'Deploy'
+            }
+        }
          stage('Dobre si Nasko') {
             steps {
                echo 'Dobre si Nasko'
