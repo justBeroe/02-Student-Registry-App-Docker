@@ -1,9 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('NPM Install') {
             steps {
-               echo 'Hello BEROE world'
+               bat 'npm install'
+            }
+        }
+        stage('Ru ingration tests') {
+            steps {
+               bat 'npm run test'
             }
         }
     }
